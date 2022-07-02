@@ -12,6 +12,7 @@
         <input type="password" class="form-control" id="inputPassword">
       </div>
     </div>
+    <button type="button" class="btn btn-primary btn-lg">LOGIN</button>
   </div>
 </template>
 
