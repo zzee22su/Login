@@ -3,7 +3,7 @@
     <div class="mb-3 row">
       <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
       <div class="col-sm-10">
-        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
       </div>
   </div>
     <div class="mb-3 row">
