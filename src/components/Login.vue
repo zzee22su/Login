@@ -9,7 +9,7 @@
         <label for="exampleInputPassword1" class="form-label">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1">
       </div>
-      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="submit" class="btn btn-primary" @click="login">Login</button>
     </form>
   </div>
 </template>
@@ -19,6 +19,13 @@ export default {
   name: 'login-compo',
   props: {
     msg: String
+  },
+
+  methos: {
+    login() {
+      //TODO: email or password 입력되지 않은 상태에서 버튼 클릭 시, alert 메시지 창 띄우기
+
+    }
   }
 }
 </script>
