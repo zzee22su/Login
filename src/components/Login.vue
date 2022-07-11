@@ -21,7 +21,7 @@ export default {
     msg: String
   },
 
-  methos: {
+  methods: {
     //TODO: 정규식 추가
     login() {
       //TODO: email or password 입력되지 않은 상태에서 버튼 클릭 시, alert 메시지 창 띄우기
