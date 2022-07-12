@@ -3,7 +3,7 @@
     <form>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model="userId">
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -15,17 +15,25 @@
 </template>
 
 <script>
+
 export default {
   name: 'login-compo',
   props: {
     msg: String
   },
+  data() {
+    return {
+      userId: ''
+    }
+  },
 
   methods: {
     //TODO: 정규식 추가
     login() {
-      //TODO: email or password 입력되지 않은 상태에서 버튼 클릭 시, alert 메시지 창 띄우기
-
+      //TODO: password 입력되지 않은 상태에서 버튼 클릭 시, alert 메시지 창 띄우기
+      if(this.userId === '') {
+        alert('e-mail을 입력해주세요.');
+      }
     }
   }
 }
