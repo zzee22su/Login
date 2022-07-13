@@ -7,7 +7,7 @@
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <input type="password" class="form-control" id="exampleInputPassword1" v-model="userPw">
       </div>
       <button type="submit" class="btn btn-primary" @click="login">Login</button>
     </form>
@@ -23,7 +23,8 @@ export default {
   },
   data() {
     return {
-      userId: ''
+      userId: '',
+      userPw: ''
     }
   },
 
@@ -34,6 +35,12 @@ export default {
       if(this.userId === '') {
         alert('e-mail을 입력해주세요.');
       }
+
+      if(this.userPw === '') {
+        alert('비밀번호를 입력해주세요.');
+      }
+      
+
     }
   }
 }
